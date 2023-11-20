@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px; /* Максимальная ширина контейнера для мобильных устройств */
+}
+
+h1 {
+    color: #3498db;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ширина кнопки на 100% контейнера */
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#noButton {
+    position: relative;
+    animation: moveButton 1s ease-in-out;
+}
+
+@keyframes moveButton {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 50%;
+        top: 0;
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+    }
+    75% {
+        left: 0;
+        top: 50%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+#insult {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out;
+}
